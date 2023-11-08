@@ -471,7 +471,7 @@ engineerButton.addEventListener("click", () => {
 blackGooButton.addEventListener("click", () => {
   fifthChangingTitle.textContent = "Black Goo";
   fifthChangingDescription.textContent =
-    "BBlack Goo is gemaakt door de Engineers en is en krachtige ziekteverwekker en kan DNA aanpassen. Het bestaat uit miljoenen micro-organismen. Het wordt gebruikt om leven te creeëren, maar ook als biologisch wapen. Degenen die getroffen zijn door het zwarte vloeistof ondergaan gewelddadige mutaties.";
+    "Black Goo is gemaakt door de Engineers en is en krachtige ziekteverwekker en kan DNA aanpassen. Het bestaat uit miljoenen micro-organismen. Het wordt gebruikt om leven te creeeren, maar ook als biologisch wapen. Degenen die getroffen zijn door het zwarte vloeistof ondergaan gewelddadige mutaties.";
 
   if (isGif) {
     blackGooImage.src = "img/blackgoo.png";

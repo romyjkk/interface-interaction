@@ -21,7 +21,7 @@ const chestbursterButton = document.querySelector(
 const chestbursterImage = document.querySelector(
   "section.first-movie article nav button:nth-of-type(3) img"
 );
-const chestburster = new Audio("./sound/chestburster.mp3");
+const chestburster = new Audio("sound/chestburster.mp3");
 
 const droneButton = document.querySelector(
   "section.first-movie article nav button:nth-of-type(4)"
@@ -29,7 +29,7 @@ const droneButton = document.querySelector(
 const droneImage = document.querySelector(
   "section.first-movie article nav button:nth-of-type(4) img"
 );
-const xenomorphHissing = new Audio("./sound/hissing.mp3");
+const xenomorphHissing = new Audio("sound/hissing.mp3");
 
 const changingTitle = document.querySelector(
   "section.first-movie article article article h3"
@@ -46,7 +46,7 @@ const queenButton = document.querySelector(
 const queenImage = document.querySelector(
   "section.second-movie article nav button:first-of-type img"
 );
-const queenHissing = new Audio("./sound/queenhissing.mp3");
+const queenHissing = new Audio("sound/queenhissing.mp3");
 
 const secondOvomorphButton = document.querySelector(
   "section.second-movie article nav button:nth-of-type(2)"
@@ -61,7 +61,7 @@ const secondChestbursterButton = document.querySelector(
 const secondChestbursterImage = document.querySelector(
   "section.second-movie article nav button:nth-of-type(3) img"
 );
-const secondChestBurster = new Audio("./sound/killme.mp3");
+const secondChestBurster = new Audio("sound/killme.mp3");
 
 const xenomorphButton = document.querySelector(
   "section.second-movie article nav button:nth-of-type(4)"
@@ -93,7 +93,7 @@ const runnerButton = document.querySelector(
 const runnerImage = document.querySelector(
   "section.third-movie article nav button:nth-of-type(2) img"
 );
-const runner = new Audio("./sound/runner.mp3");
+const runner = new Audio("sound/runner.mp3");
 
 const ripleyButton = document.querySelector(
   "section.third-movie article nav button:nth-of-type(3)"
@@ -117,7 +117,7 @@ const ripleyCloneButton = document.querySelector(
 const ripleyCloneImage = document.querySelector(
   "section.fourth-movie article nav button:first-of-type img"
 );
-const lick = new Audio("../sound/lick.mp3");
+const lick = new Audio("sound/lick.mp3");
 
 const newbornButton = document.querySelector(
   "section.fourth-movie article nav button:nth-of-type(2)"
@@ -125,7 +125,7 @@ const newbornButton = document.querySelector(
 const newbornImage = document.querySelector(
   "section.fourth-movie article nav button:nth-of-type(2) img"
 );
-const newborn = new Audio("../sound/newborn.mp3");
+const newborn = new Audio("sound/newborn.mp3");
 
 const swimmingAlienButton = document.querySelector(
   "section.fourth-movie article nav button:nth-of-type(3)"
@@ -133,7 +133,7 @@ const swimmingAlienButton = document.querySelector(
 const swimmingAlienImage = document.querySelector(
   "section.fourth-movie article nav button:nth-of-type(3) img"
 );
-const swim = new Audio("./sound/swim.mp3");
+const swim = new Audio("sound/swim.mp3");
 
 const fourthChangingTitle = document.querySelector(
   "section.fourth-movie article article article h3"
@@ -150,7 +150,7 @@ const engineerButton = document.querySelector(
 const engineerImage = document.querySelector(
   "section.fifth-movie article nav button:first-of-type img"
 );
-const engineerRipsHead = new Audio("./sound/riphead.mp3");
+const engineerRipsHead = new Audio("sound/riphead.mp3");
 
 const blackGooButton = document.querySelector(
   "section.fifth-movie article nav button:nth-of-type(2)"
@@ -165,7 +165,7 @@ const trilobiteButton = document.querySelector(
 const trilobiteImage = document.querySelector(
   "section.fifth-movie article nav button:nth-of-type(3) img"
 );
-const trilobite = new Audio("../sound/trilobiteattack.mp3");
+const trilobite = new Audio("sound/trilobiteattack.mp3");
 
 const deaconButton = document.querySelector(
   "section.fifth-movie article nav button:nth-of-type(4)"
@@ -173,7 +173,7 @@ const deaconButton = document.querySelector(
 const deaconImage = document.querySelector(
   "section.fifth-movie article nav button:nth-of-type(4) img"
 );
-const deaconScream = new Audio("../sound/deaconscream.mp3");
+const deaconScream = new Audio("sound/deaconscream.mp3");
 
 const fifthChangingTitle = document.querySelector(
   "section.fifth-movie article article article h3"
@@ -197,7 +197,7 @@ const bloodbursterButton = document.querySelector(
 const bloodbursterImage = document.querySelector(
   "section.sixth-movie article nav button:nth-of-type(2) img"
 );
-const bloodburstBirth = new Audio("../sound/bloodburstbirth.mp3");
+const bloodburstBirth = new Audio("sound/bloodburstbirth.mp3");
 
 const neomorphButton = document.querySelector(
   "section.sixth-movie article nav button:nth-of-type(3)"
@@ -205,7 +205,7 @@ const neomorphButton = document.querySelector(
 const neomorphImage = document.querySelector(
   "section.sixth-movie article nav button:nth-of-type(3) img"
 );
-const neomorph = new Audio("../sound/neomorph.mp3");
+const neomorph = new Audio("sound/neomorph.mp3");
 
 const praetomorphButton = document.querySelector(
   "section.sixth-movie article nav button:nth-of-type(4)"
@@ -213,7 +213,7 @@ const praetomorphButton = document.querySelector(
 const praetomorphImage = document.querySelector(
   "section.sixth-movie article nav button:nth-of-type(4) img"
 );
-const praetoHissing = new Audio("../sound/xenohissing.mp3");
+const praetoHissing = new Audio("sound/xenohissing.mp3");
 
 const sixthChangingTitle = document.querySelector(
   "section.sixth-movie article article article h3"

@@ -1,5 +1,5 @@
 const title = document.querySelector("body header section h1");
-const mainTheme = new Audio("../sound/maintitle.mp3");
+const mainTheme = new Audio("sound/maintitle.mp3");
 
 let audioPlaying = false;
 

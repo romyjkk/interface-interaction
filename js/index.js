@@ -29,7 +29,7 @@ const closeSixthPopup = document.querySelector(".close-sixth-movie");
 const easterEggButton = document.querySelector("body button.motion-tracker");
 const easterEgg = document.querySelector("body .motion-tracker-img");
 
-const motionTracker = new Audio("../sound/motiondetector.mp3");
+const motionTracker = new Audio("sound/motiondetector.mp3");
 
 let shown = false;
 

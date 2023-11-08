@@ -6,7 +6,7 @@ const ovomorphButton = document.querySelector(
 const ovomorphImage = document.querySelector(
   "section.first-movie article nav button:first-of-type img"
 );
-const ovomorphOpening = new Audio("./sound/ovomorphopening.mp3");
+const ovomorphOpening = new Audio("sound/ovomorphopening.mp3");
 
 const facehuggerButton = document.querySelector(
   "section.first-movie article nav button:nth-of-type(2)"

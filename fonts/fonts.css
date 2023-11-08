@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("Helvetica\ CE\ Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("Helvetica\ CE\ Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("Helvetica\ CE\ Oblique.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica Black";
+    src: url("Helvetica\ Black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sevastopol";
+    src: url("sevastopol-interface.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}

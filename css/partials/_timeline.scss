@@ -1,0 +1,363 @@
+@import "../helpers/variables";
+
+// De tijdlijn
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+
+  section.manual {
+    position: absolute;
+    top: 0;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+  }
+
+  // Hier vind je alle styling voor de vents
+
+  // Evt wil ik dit nog veranderen naar 1 ol met daarin 6 li items, dat had Sanne me aangeraden. Met position absolute wil ik alles dan stylen, maar dit doe ik alleen als ik nog tijd heb.
+
+  section.vents {
+    width: fit-content;
+    ol:first-of-type {
+      height: 30em;
+      li:first-of-type {
+        width: 10em;
+        height: 30em;
+        z-index: 1;
+      }
+      li:nth-of-type(2) {
+        height: 10em;
+        width: 50em;
+        transform: translate(0, -160px);
+      }
+    }
+    ol:nth-of-type(2) {
+      height: 60em;
+      li:first-of-type {
+        width: 10em;
+        height: 40em;
+        transform: translate(640px, 0);
+        z-index: 1;
+      }
+      li:nth-of-type(2) {
+        height: 10em;
+        width: 40em;
+        transform: translate(160px, -160px);
+      }
+      li:nth-of-type(3) {
+        width: 10em;
+        height: 30em;
+        transform: translate(160px, -320px);
+      }
+      li:nth-of-type(4) {
+        height: 10em;
+        width: 30em;
+        transform: translate(160px, -480px);
+      }
+    }
+    ol:nth-of-type(3) {
+      height: 60em;
+      li:first-of-type {
+        width: 10em;
+        height: 40em;
+        transform: translate(480px, 0);
+        z-index: 1;
+      }
+      li:nth-of-type(2) {
+        height: 10em;
+        width: 40em;
+        transform: translate(0, -160px);
+      }
+      li:nth-of-type(3) {
+        width: 10em;
+        height: 30em;
+        transform: translate(0, -320px);
+      }
+      li:nth-of-type(4) {
+        width: 30em;
+        height: 10em;
+        transform: translate(0, -480px);
+      }
+    }
+    ol:nth-of-type(4) {
+      height: 60em;
+      li:first-of-type {
+        width: 10em;
+        height: 40em;
+        transform: translate(320px, 0);
+        z-index: 1;
+      }
+      li:nth-of-type(2) {
+        width: 30em;
+        height: 10em;
+        transform: translate(0, -160px);
+      }
+      li:nth-of-type(3) {
+        width: 10em;
+        height: 40em;
+        transform: translate(0, -320px);
+      }
+      li:nth-of-type(4) {
+        height: 10em;
+        width: 50em;
+        transform: translate(0, -480px);
+      }
+    }
+    ol:nth-of-type(5) {
+      height: 50em;
+      li:first-of-type {
+        width: 10em;
+        height: 30em;
+        transform: translate(640px, 0);
+        z-index: 1;
+      }
+      li:nth-of-type(2) {
+        width: 30em;
+        height: 10em;
+        transform: translate(320px, -160px);
+      }
+      li:nth-of-type(3) {
+        width: 10em;
+        height: 30em;
+        transform: translate(320px, -320px);
+      }
+      li:nth-of-type(4) {
+        width: 30em;
+        height: 10em;
+        transform: translate(0, -480px);
+      }
+    }
+    ol:nth-of-type(6) {
+      height: 60em;
+      li:first-of-type {
+        width: 10em;
+        height: 30em;
+        z-index: 1;
+      }
+      li:nth-of-type(2) {
+        width: 40em;
+        height: 10em;
+        transform: translate(0, -160px);
+      }
+      li:nth-of-type(3) {
+        width: 10em;
+        height: 43em;
+        transform: translate(480px, -320px);
+      }
+    }
+
+    // algemene styling die alle vents en buttons nodig hebben
+
+    ol {
+      li {
+        position: relative;
+        background: var(--vent);
+        box-shadow: inset 0 0 15px #000000;
+        display: flex;
+        justify-content: center;
+        article {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+          height: 10em;
+          width: 10em;
+          background: var(--vent-entrance);
+          box-shadow: inset 0 0 15px #141414;
+          padding-top: 0;
+          button {
+            width: 8em;
+            height: 8em;
+            border: 45px solid var(--vent-opening);
+            border-radius: 200px;
+            // background: black;
+            background: linear-gradient(44deg, black, #242424);
+
+            // Met deze repeating-conic-gradient (inspiratie gehaald uit een Codepen van Sanne) wilde ik graag de vents uit Alien: Isolation namaken.
+
+            // background: repeating-conic-gradient(
+            //   black 0deg 8deg,
+            //   #242424 8deg 16deg
+            // );
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+              // background: radial-gradient(#242424, black);
+              background: linear-gradient(44deg, black, #242424);
+              border: 5px solid var(--vent-opening);
+            }
+          }
+        }
+        h3 {
+          position: absolute;
+          margin: 0;
+          bottom: -1em;
+        }
+      }
+    }
+  }
+}
+
+// Popup styling. Deze moet eigenlijk nog in de ol, maar dat doe ik alleen als ik nog tijd heb.
+
+section.popup {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  // width: 60%;
+  width: 57em;
+  height: 80%;
+  background: var(--terminal-primary-color);
+  z-index: 5;
+
+  nav.open-and-close {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    background: var(--terminal-secondary-color);
+    padding: 10px 0;
+
+    p {
+      margin: 0 0 0 10px;
+      font-size: 2em;
+
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
+      letter-spacing: 0.15em; /* Adjust as needed */
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    // Typing effect
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    // animation credits: https://css-tricks.com/snippets/css/typewriter-effect/
+
+    button {
+      height: 2em;
+      aspect-ratio: 1/1;
+      background: var(--terminal-primary-color);
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  article {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
+
+    nav {
+      width: 20em;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow-y: scroll;
+      padding-right: 10px;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        // height: 100%;
+        height: fit-content;
+        border: 3px solid var(--terminal-secondary-color);
+        padding: 0;
+        // overflow: hidden;
+        // aspect-ratio: 2/1;
+        transition: 0.5s;
+
+        img {
+          width: 100%;
+          // overflow: hidden;
+          transition: 0.2s;
+          // aspect-ratio: 2/1;
+        }
+
+        &:hover {
+          box-shadow: 0px 0 10px #12b969;
+          // img {
+          //   transform: scale(1.1);
+          //   // overflow: hidden;
+          // }
+        }
+      }
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      height: 100%;
+
+      article:first-of-type {
+        width: 100%;
+        background: var(--terminal-tertiary-color);
+        padding: 10px 0;
+        border: 3px solid white;
+        margin: 0;
+        height: fit-content;
+      }
+
+      article:nth-of-type(2) {
+        height: 100%;
+        width: 100%;
+        border: 3px solid var(--terminal-secondary-color);
+        border-top: 20px solid var(--terminal-secondary-color);
+        margin: 0;
+
+        p {
+          padding: 20px;
+          padding: 10px 20px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// section.first-movie {
+//   article {
+//     nav {
+//       button {
+//         img {
+//           width: 100%;
+//           overflow: hidden;
+//           transition: 0.2s;
+//           aspect-ratio: 2/1;
+//         }
+
+//         &:hover {
+//           img {
+//             transform: scale(1.1);
+//             overflow: hidden;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

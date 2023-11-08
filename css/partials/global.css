@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background: #000000;
+}
+
+main {
+  scroll-snap-type: y;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+figure {
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  background: none;
+}/*# sourceMappingURL=global.css.map */

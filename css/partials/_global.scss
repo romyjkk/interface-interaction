@@ -1,0 +1,205 @@
+@import "../helpers/variables";
+
+body {
+  margin: 0;
+  background: var(--background);
+  position: relative;
+  background-image: url("../../img/background5.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // scroll-snap-type: y;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+figure {
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: 5px solid var(--terminal-tertiary-color);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: flex;
+}
+
+// Scrollbar custom styles
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--terminal-primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--terminal-secondary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--terminal-tertiary-color);
+}
+
+// https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+
+// easter egg
+
+button.motion-tracker {
+  position: sticky;
+  left: 5em;
+  bottom: 3em;
+
+  transform: translatey(-0.3em);
+  padding: 0.8em;
+  background: var(--terminal-primary-color);
+  filter: drop-shadow(0 0.3em 0 var(--terminal-tertiary-color));
+  border-radius: 10px;
+  z-index: 3;
+  transition: 0.5s;
+
+  &:hover {
+    background: var(--terminal-secondary-color);
+  }
+
+  &:active {
+    transform: translatey(0em);
+    filter: drop-shadow(0px 0px 0px var(--terminal-tertiary-color));
+  }
+
+  // credits voor de button states: https://codepen.io/shooft/pen/eYKdyxY?editors=0100
+}
+
+figure.motion-tracker-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  transition: 1s;
+  z-index: 2;
+
+  img {
+    width: 30em;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+  }
+  article {
+    width: 1em;
+    height: 1em;
+    background: var(--primary-text-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 18em;
+    left: 45em;
+    animation: blink 1s infinite linear, move 5s infinite linear;
+  }
+
+  @keyframes blink {
+    0% {
+      background: var(--primary-text-color);
+    }
+
+    25% {
+      background: none;
+    }
+
+    50% {
+      background: var(--primary-text-color);
+    }
+
+    75% {
+      background: none;
+    }
+
+    100% {
+      background: var(--primary-text-color);
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(-5px, 0);
+  }
+
+  20% {
+    transform: translate(-10px, -5px);
+  }
+
+  30% {
+    transform: translate(-15px, -10px);
+  }
+
+  40% {
+    transform: translate(-20px, -15px);
+  }
+
+  50% {
+    transform: translate(-25px, -20px);
+  }
+
+  60% {
+    transform: translate(-20px, -20px);
+  }
+
+  70% {
+    transform: translate(-15px, -15px);
+  }
+
+  80% {
+    transform: translate(-10px, -10px);
+  }
+
+  90% {
+    transform: translate(-5px, -5px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.hide-motion-tracker {
+  transform: translate(0, 600px);
+}
+
+.show-motion-tracker {
+  transform: translate(0, 0);
+}

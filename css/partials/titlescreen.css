@@ -1,0 +1,34 @@
+main section.title-screen {
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(153deg, rgb(0, 0, 0) 0%, rgb(104, 70, 16) 37%, rgb(0, 0, 0) 73%);
+  position: relative;
+  overflow: hidden;
+}
+main section.title-screen::before {
+  content: "";
+  height: 110vh;
+  aspect-ratio: 1/1;
+  border-radius: 500px;
+  background: #020202;
+  display: block;
+  position: absolute;
+  transform: translate(-450px);
+  box-shadow: 10px 10px 40px #68461c, inset 0 0 10px #68461c;
+  z-index: 1;
+}
+main section.title-screen article {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.title-screen div#particles {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}/*# sourceMappingURL=titlescreen.css.map */
